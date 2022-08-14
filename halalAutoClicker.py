@@ -10,21 +10,25 @@ def click():
     print("You clicked me:", count,"times.")
 
 window = Tk()
-
+window.title("Halal Clicker")
+window.iconbitmap("kaaba2.ico")
 photo=PhotoImage(file="kaaba.png")
 
 button = Button(window,
- text = "Click for thawab.",
+ text = "Click for thawab",
  command=click,
- font=("Comic Sans", 30),
- fg="#00FF00",
- bg="black",
- activebackground="black",
- activeforeground="#00FF00",
+ font=("Comic Sans MS", 30),
+ fg="black",
+ bg="#BDEBED",
+ activebackground="#D4F4F5",
+ activeforeground="black",
  state=ACTIVE,
  image=photo,
- compound="top")
+ compound="top",
+ cursor="heart")
 button.pack()
+
+
 
 window.mainloop()
 
