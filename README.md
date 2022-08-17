@@ -1,4 +1,4 @@
-# Welcome to Halal Auto Clicker
+# Welcome to Halal Clicker
 
 Ever felt like you were not confident in your faith?	
 Would you like to increase your chances of reaching Jannah?	
