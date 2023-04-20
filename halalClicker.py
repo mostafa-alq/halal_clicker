@@ -1,31 +1,23 @@
 from tkinter import *
 
+with open("ranks.txt", "r") as f:
+  data = [l.strip() for l in f]
+  
+print(data)
+
 #Counter function
+pointer = 0
 count = 0
 rank = ""
 def click():
   global count
+  global pointer
   count+=1
+  if count % 10 == 0:
+    rank.configure(text=data[pointer])
+    pointer += 1
   thawab.configure(text=f"Thawab: {count}")
-  if count == 10:
-    rank.configure(text=f"Newb Muslim")
-  elif count == 20:
-    rank.configure(text=f"Inpet Muslim")
-  elif count == 30:
-    rank.configure(text=f"Weak Muslim")
-  elif count == 40:
-    rank.configure(text=f"Unskilled Muslim")
-  elif count == 50:
-    rank.configure(text=f"Mediocre Muslim")
-  elif count == 60:
-    rank.configure(text=f"Initiated Muslim")
-  elif count == 70:
-    rank.configure(text=f"Dedicated Muslim")
-  elif count == 80:
-    rank.configure(text=f"Skilled Muslim")
-  elif count == 90:
-    rank.configure(text=f"Remarkable Muslim")
-  elif count == 100:
+  if len(data) <= pointer:
     rank.configure(text=f"JANNAH FOR YOU BROTHER MASHALLAH")
     thawab.configure(text=f"JANNAH FOR YOU BROTHER MASHALLAH") 
     sicktitle.configure(text=f"JANNAH FOR YOU BROTHER MASHALLAH")
@@ -43,15 +35,15 @@ sicktitle.pack()
 
 #Thawab button
 button = Button(root,
- text="Click for thawab!!!",
- command=click,
- font=("Comic Sans MS", 30),
- image=photo,
- bg="#BDEBED",
- activebackground="#BDEBED",
- compound="top",
- cursor="heart",
- width=640)
+  text="Click for thawab!!!",
+  command=click,
+  font=("Comic Sans MS", 30),
+  image=photo,
+  bg="#BDEBED",
+  activebackground="#BDEBED",
+  compound="top",
+  cursor="heart",
+  width=639)
 button.pack()
 
 
