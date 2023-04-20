@@ -2,8 +2,6 @@ from tkinter import *
 
 with open("ranks.txt", "r") as f:
   data = [l.strip() for l in f]
-  
-print(data)
 
 #Counter function
 pointer = 0
