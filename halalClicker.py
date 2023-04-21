@@ -29,8 +29,8 @@ def click():
     pauseButton.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
     stopButton.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
     thawabButton.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
-    musicTitle.configure(text="JANNAH FOR YOU BROTHER MASHALLA")
-
+    musicTitle.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
+    
 #Initialising the window
 root = Tk()
 root.title("Halal Clicker")
@@ -60,7 +60,7 @@ space = Label(root,text="",font=("Bahnschrift", 20),fg="black", bg=bgcolour, wid
 space.pack()
 
 #Music
-musicTitle = Label(root,text="[BEAUTIFUL NASHEED MASHALLAH]",font=("Bahnschrift", 20),fg="black", bg=bgcolour, width=43)
+musicTitle = Label(root,text="BEAUTIFUL NASHEED MASHALLAH",font=("Bahnschrift", 20),fg="black", bg=bgcolour, width=43)
 musicTitle.pack()
 
 pygame.mixer.init()
