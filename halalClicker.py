@@ -3,12 +3,11 @@ from playsound import playsound
 import pygame
 import random
 
-
 #Reading text files
 with open("ranks.txt", "r") as f:
   data = [l.strip() for l in f]
 with open("colours.txt", "r") as g:
-  data2 = [j.strip() for j in g]
+  colours = [j.strip() for j in g]
 
 #Counter function
 pointer = 0
@@ -31,7 +30,6 @@ def click():
     stopButton.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
     thawabButton.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
     musicTitle.configure(text="JANNAH FOR YOU BROTHER MASHALLA")
-    
 
 #Initialising the window
 root = Tk()
@@ -39,7 +37,7 @@ root.title("Halal Clicker")
 # root.attributes("fullscreen",True)
 root.iconbitmap("kaaba2.ico")
 photo=PhotoImage(file="kaaba.png")
-bgcolour = data2[random.randint(0,len(data2)-1)]
+bgcolour = colours[random.randint(0,len(colours)-1)]
 root.configure(background=bgcolour)
 
 #Epic title
@@ -49,7 +47,6 @@ sicktitle.pack()
 #Thawab button
 thawabButton = Button(root,text="Click for thawab!!!",command=click,font=("Bahnschrift", 30),image=photo,bg="#BDEBED", activebackground="#BDEBED",compound="top",cursor="heart",width=640)
 thawabButton.pack()
-
 
 #Thawab counter
 thawab = Label(root,text="Thawab = 0",font=("Bahnschrift", 20),fg="black", bg=bgcolour, width=43)
