@@ -3,9 +3,10 @@ from playsound import playsound
 import pygame
 import random
 
+
+#Reading text files
 with open("ranks.txt", "r") as f:
   data = [l.strip() for l in f]
-
 with open("colours.txt", "r") as g:
   data2 = [j.strip() for j in g]
 
@@ -29,6 +30,7 @@ def click():
     pauseButton.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
     stopButton.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
     thawabButton.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
+    musicTitle.configure(text="JANNAH FOR YOU BROTHER MASHALLA")
     
 
 #Initialising the window
