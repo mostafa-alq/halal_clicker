@@ -1,3 +1,5 @@
 Slategray3
-CadetBlue1
 DarkOliveGreen3
+lavender
+light cyan
+goldenrod1
