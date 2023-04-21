@@ -18,17 +18,17 @@ def click():
   global pointer
   count+=1
   thawab.configure(text=f"Thawab: {count}")
-  if count % 10 == 0:
+  if count % 5 == 0 and len(data) > pointer:
     rank.configure(text=data[pointer])
     pointer += 1
   if len(data) <= pointer:
-    rank.configure(text=f"JANNAH FOR YOU BROTHER MASHALLAH")
-    thawab.configure(text=f"JANNAH FOR YOU BROTHER MASHALLAH") 
-    sicktitle.configure(text=f"JANNAH FOR YOU BROTHER MASHALLAH")
-    playButton.configure(text=f"JANNAH FOR YOU BROTHER MASHALLAH")
-    pauseButton.configure(text=f"JANNAH FOR YOU BROTHER MASHALLAH")
-    stopButton.configure(text=f"JANNAH FOR YOU BROTHER MASHALLAH")
-    thawabButton.configure(text=f"JANNAH FOR YOU BROTHER MASHALLAH")
+    rank.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
+    thawab.configure(text="JANNAH FOR YOU BROTHER MASHALLAH") 
+    sicktitle.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
+    playButton.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
+    pauseButton.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
+    stopButton.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
+    thawabButton.configure(text="JANNAH FOR YOU BROTHER MASHALLAH")
     
 
 #Initialising the window
